@@ -1,0 +1,575 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Redo Classwork</title>
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+</head>
+<style>
+    .navbar .navbar-nav .nav-item .nav-link.active {
+        background-color: rgb(8, 178, 178);
+        border-radius: 8px;
+    }
+
+    .h-100vh {
+        height: 100vh;
+    }
+
+    h1 {
+        letter-spacing: 4px;
+        font-size: 60px;
+    }
+
+    h2 {
+        font-size: 50px;
+        letter-spacing: 4px;
+    }
+
+    .card-hover {
+        display: none;
+    }
+
+    .card:hover .card-hover {
+        display: block;
+    }
+
+    .h-60vh {
+        height: 60vh;
+    }
+    .h-40vh{
+        height: 30vh;
+    }
+    footer{
+        height: 8vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: rgb(30, 32, 28);
+        color: white;
+    }
+    
+</style>
+
+<body>
+    <nav class="navbar lh-lg navbar-expand-sm navbar-dark bg-secondary fixed-top" id="navbar-scrollspy">
+        <div class="container">
+            <a class="navbar-brand text-uppercase fw-bold" href="#">Start Bootstrap</a>
+            <button class="navbar-toggler d-lg-none" type="button" data-bs-toggle="collapse"
+                data-bs-target="#collapsibleNavId" aria-controls="collapsibleNavId" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="collapsibleNavId">
+                <ul class="navbar-nav ms-auto mt-2 mt-lg-0">
+                    <li class="nav-item px-3">
+                        <a class="nav-link active text-uppercase text-white" href="#portfolio" aria-current="page">portfolio
+                            <span class="visually-hidden">(current)</span></a>
+                    </li>
+                    <li class="nav-item px-3">
+                        <a class="nav-link text-uppercase text-white" href="#about">about</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a href="#contact" class="nav-link text-uppercase text-white">contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <main data-bs-spy="scroll" data-bs-target="#navbar-scrollspy" data-bs-root-margin="0px 0px -40%"
+        data-bs-smooth-scroll="true" class="scrollspy-example bg-body-tertiary rounded-2" tabindex="0">
+        <section class="hero-banner">
+            <div
+                class="container-fluid bg-success h-100vh d-flex flex-column justify-content-center align-items-center">
+                <img src="assets/img/avataaars.svg" class="img-fluid rounded w-25 h-25" alt="">
+                <h1 class="text-uppercase mt-4 text-white">start bootstrap</h1>
+                <div class="wrapper d-flex align-items-center">
+                    <div class="line-l border border-4 border-top-0 border-start-0 border-end-0 text-success mb-3">
+                        ---------------</div>
+                    <div class="star fs-2 text-white mx-4"> <i class="fa-solid fa-star"></i> </div>
+                    <div class="line-r border border-4 border-top-0 border-start-0 border-end-0 text-success mb-3">
+                        ---------------</div>
+                </div>
+                <h5 class="mt-4 text-white fw-lighter">Graphic Artist - Web Desighner - illustrator</h5>
+            </div>
+        </section>
+        <section class="portfolio py-5" id="portfolio">
+            <div class="container-fluid h-100vh bg-light">
+                <div class="title-bar d-flex flex-column justify-content-center align-items-center">
+                    <h2 class="text-uppercase text-center">Portfolio</h2>
+                    <div class="wrapper d-flex align-items-center">
+                        <div
+                            class="line-l border border-4 border-top-0 border-dark border-start-0 border-end-0 text-light mb-3">
+                            ---------------</div>
+                        <div class="star fs-2 text-dark mx-4"> <i class="fa-solid fa-star"></i> </div>
+                        <div
+                            class="line-r border border-4 border-top-0 border-dark border-start-0 border-end-0 text-light mb-3">
+                            ---------------</div>
+                    </div>
+                </div>
+                <div class="container mt-4">
+                    <div class="row gy-4">
+                        <div class="col-xl-4 col-lg-6 col-md-6 col-sm-12">
+                            <div class="card border-0 position-relative">
+                                <img src="assets/img/portfolio/cabin.png" class="rounded-3" alt="">
+                                <div class="card-hover">
+                                    <span
+                                        class="modify position-absolute top-50 start-50 translate-middle d-flex justify-content-center align-items-center fs-1 text-white bg-success w-100 h-100 opacity-75 rounded-3">
+                                        <a href="" class="text-decoration-none text-white" data-bs-target="#modal-1"
+                                            data-bs-toggle="modal"> + </a>
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="modal fade" id="modal-1" tabindex="-1" role="document"
+                                aria-labelledby="modalTitleId" aria-hidden="true" data-bs-backdrop="static">
+                                <div class="modal-dialog modal-lg modal-dialog-center modal-fullscreen-lg-down"
+                                    role="document">
+                                    <div class="modal-content">
+                                        <div class="modal-header border-0">
+                                            <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                                aria-label="Close"></button>
+                                        </div>
+                                        <div class="modal-body">
+                                            <div
+                                                class="modal-title d-flex flex-column justify-content-center align-items-center">
+                                                <h2 class="text-uppercase text-center">Controller</h2>
+                                                <div class="wrapper d-flex align-items-center">
+                                                    <div
+                                                        class="line-l border border-4 border-top-0 border-dark border-start-0 border-end-0 text-light mb-3">
+                                                        ---------------</div>
+                                                    <div class="star fs-4 text-dark mx-4"> <i
+                                                            class="fa-solid fa-star"></i> </div>
+                                                    <div
+                                                        class="line-r border border-4 border-top-0 border-dark border-start-0 border-end-0 text-light mb-3">
+                                                        ---------------</div>
+                                                </div>
+                                            </div>
+                                            <div class="modal-img d-flex justify-content-center align-items-center">
+                                                <img src="assets/img/portfolio/cabin.png"
+                                                    class="img-fluid rounded-3 mt-3 w-75 h-75" alt="">
+                                            </div>
+                                            <div
+                                                class="modal-title d-flex justify-content-center align-items-center text-center mt-3">
+                                                <p class="w-75 h-75">Lorem ipsum dolor, sit amet consectetur adipisicing
+                                                    elit. Odit iusto
+                                                    quisquam aliquid accusamus officia praesentium quas! Quidem in at
+                                                    unde
+                                                    facilis veritatis facere impedit doloremque placeat iste ea, et
+                                                    maxime
+                                                    quibusdam.</p>
+                                            </div>
+                                        </div>
+                                        <div
+                                            class="modal-footer border-0 d-flex justify-content-center align-items-center">
+                                            <button type="button" class="btn btn-info mb-4" data-bs-dismiss="modal">
+                                                X Close Window
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-4 col-lg-6 col-md-6 col-sm-12">
+                            <div class="card border-0 position-relative">
+                                <img src="assets/img/portfolio/cake.png" class="rounded-3" alt="">
+                                <div class="card-hover">
+                                    <span
+                                        class="modify position-absolute top-50 start-50 translate-middle d-flex justify-content-center align-items-center fs-1 text-white bg-success w-100 h-100 opacity-75 rounded-3">
+                                        <a href="" class="text-decoration-none text-white" data-bs-target="#modal-2"
+                                            data-bs-toggle="modal"> + </a>
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="modal fade" id="modal-2" tabindex="-1" role="document"
+                                aria-labelledby="modalTitleId" aria-hidden="true" data-bs-backdrop="static">
+                                <div class="modal-dialog modal-lg modal-dialog-center modal-fullscreen-lg-down"
+                                    role="document">
+                                    <div class="modal-content">
+                                        <div class="modal-header border-0">
+                                            <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                                aria-label="Close"></button>
+                                        </div>
+                                        <div class="modal-body">
+                                            <div
+                                                class="modal-title d-flex flex-column justify-content-center align-items-center">
+                                                <h2 class="text-uppercase text-center">Controller</h2>
+                                                <div class="wrapper d-flex align-items-center">
+                                                    <div
+                                                        class="line-l border border-4 border-top-0 border-dark border-start-0 border-end-0 text-light mb-3">
+                                                        ---------------</div>
+                                                    <div class="star fs-4 text-dark mx-4"> <i
+                                                            class="fa-solid fa-star"></i> </div>
+                                                    <div
+                                                        class="line-r border border-4 border-top-0 border-dark border-start-0 border-end-0 text-light mb-3">
+                                                        ---------------</div>
+                                                </div>
+                                            </div>
+                                            <div class="modal-img d-flex justify-content-center align-items-center">
+                                                <img src="assets/img/portfolio/cabin.png"
+                                                    class="img-fluid rounded-3 mt-3 w-75 h-75" alt="">
+                                            </div>
+                                            <div
+                                                class="modal-title d-flex justify-content-center align-items-center text-center mt-3">
+                                                <p class="w-75 h-75">Lorem ipsum dolor, sit amet consectetur adipisicing
+                                                    elit. Odit iusto
+                                                    quisquam aliquid accusamus officia praesentium quas! Quidem in at
+                                                    unde
+                                                    facilis veritatis facere impedit doloremque placeat iste ea, et
+                                                    maxime
+                                                    quibusdam.</p>
+                                            </div>
+                                        </div>
+                                        <div
+                                            class="modal-footer border-0 d-flex justify-content-center align-items-center">
+                                            <button type="button" class="btn btn-info mb-4" data-bs-dismiss="modal">
+                                                X Close Window
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-4 col-lg-6 col-md-6 col-sm-12">
+                            <div class="card border-0 position-relative">
+                                <img src="assets/img/portfolio/circus.png" class="rounded-3" alt="">
+                                <div class="card-hover">
+                                    <span
+                                        class="modify position-absolute top-50 start-50 translate-middle d-flex justify-content-center align-items-center fs-1 text-white bg-success w-100 h-100 opacity-75 rounded-3">
+                                        <a href="" class="text-decoration-none text-white" data-bs-target="#modal-3"
+                                            data-bs-toggle="modal"> + </a>
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="modal fade" id="modal-3" tabindex="-1" role="document"
+                                aria-labelledby="modalTitleId" aria-hidden="true" data-bs-backdrop="static">
+                                <div class="modal-dialog modal-lg modal-dialog-center modal-fullscreen-lg-down"
+                                    role="document">
+                                    <div class="modal-content">
+                                        <div class="modal-header border-0">
+                                            <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                                aria-label="Close"></button>
+                                        </div>
+                                        <div class="modal-body">
+                                            <div
+                                                class="modal-title d-flex flex-column justify-content-center align-items-center">
+                                                <h2 class="text-uppercase text-center">Controller</h2>
+                                                <div class="wrapper d-flex align-items-center">
+                                                    <div
+                                                        class="line-l border border-4 border-top-0 border-dark border-start-0 border-end-0 text-light mb-3">
+                                                        ---------------</div>
+                                                    <div class="star fs-4 text-dark mx-4"> <i
+                                                            class="fa-solid fa-star"></i> </div>
+                                                    <div
+                                                        class="line-r border border-4 border-top-0 border-dark border-start-0 border-end-0 text-light mb-3">
+                                                        ---------------</div>
+                                                </div>
+                                            </div>
+                                            <div class="modal-img d-flex justify-content-center align-items-center">
+                                                <img src="assets/img/portfolio/cabin.png"
+                                                    class="img-fluid rounded-3 mt-3 w-75 h-75" alt="">
+                                            </div>
+                                            <div
+                                                class="modal-title d-flex justify-content-center align-items-center text-center mt-3">
+                                                <p class="w-75 h-75">Lorem ipsum dolor, sit amet consectetur adipisicing
+                                                    elit. Odit iusto
+                                                    quisquam aliquid accusamus officia praesentium quas! Quidem in at
+                                                    unde
+                                                    facilis veritatis facere impedit doloremque placeat iste ea, et
+                                                    maxime
+                                                    quibusdam.</p>
+                                            </div>
+                                        </div>
+                                        <div
+                                            class="modal-footer border-0 d-flex justify-content-center align-items-center">
+                                            <button type="button" class="btn btn-info mb-4" data-bs-dismiss="modal">
+                                                X Close Window
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-4 col-lg-6 col-md-6 col-sm-12">
+                            <div class="card border-0 position-relative">
+                                <img src="assets/img/portfolio/game.png" class="rounded-3" alt="">
+                                <div class="card-hover">
+                                    <span
+                                        class="modify position-absolute top-50 start-50 translate-middle d-flex justify-content-center align-items-center fs-1 text-white bg-success w-100 h-100 opacity-75 rounded-3">
+                                        <a href="" class="text-decoration-none text-white" data-bs-target="#modal-4"
+                                            data-bs-toggle="modal"> + </a>
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="modal fade" id="modal-4" tabindex="-1" role="document"
+                                aria-labelledby="modalTitleId" aria-hidden="true" data-bs-backdrop="static">
+                                <div class="modal-dialog modal-lg modal-dialog-center modal-fullscreen-lg-down"
+                                    role="document">
+                                    <div class="modal-content">
+                                        <div class="modal-header border-0">
+                                            <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                                aria-label="Close"></button>
+                                        </div>
+                                        <div class="modal-body">
+                                            <div
+                                                class="modal-title d-flex flex-column justify-content-center align-items-center">
+                                                <h2 class="text-uppercase text-center">Controller</h2>
+                                                <div class="wrapper d-flex align-items-center">
+                                                    <div
+                                                        class="line-l border border-4 border-top-0 border-dark border-start-0 border-end-0 text-light mb-3">
+                                                        ---------------</div>
+                                                    <div class="star fs-4 text-dark mx-4"> <i
+                                                            class="fa-solid fa-star"></i> </div>
+                                                    <div
+                                                        class="line-r border border-4 border-top-0 border-dark border-start-0 border-end-0 text-light mb-3">
+                                                        ---------------</div>
+                                                </div>
+                                            </div>
+                                            <div class="modal-img d-flex justify-content-center align-items-center">
+                                                <img src="assets/img/portfolio/cabin.png"
+                                                    class="img-fluid rounded-3 mt-3 w-75 h-75" alt="">
+                                            </div>
+                                            <div
+                                                class="modal-title d-flex justify-content-center align-items-center text-center mt-3">
+                                                <p class="w-75 h-75">Lorem ipsum dolor, sit amet consectetur adipisicing
+                                                    elit. Odit iusto
+                                                    quisquam aliquid accusamus officia praesentium quas! Quidem in at
+                                                    unde
+                                                    facilis veritatis facere impedit doloremque placeat iste ea, et
+                                                    maxime
+                                                    quibusdam.</p>
+                                            </div>
+                                        </div>
+                                        <div
+                                            class="modal-footer border-0 d-flex justify-content-center align-items-center">
+                                            <button type="button" class="btn btn-info mb-4" data-bs-dismiss="modal">
+                                                X Close Window
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-4 col-lg-6 col-md-6 col-sm-12">
+                            <div class="card border-0 position-relative">
+                                <img src="assets/img/portfolio/safe.png" class="rounded-3" alt="">
+                                <div class="card-hover">
+                                    <span
+                                        class="modify position-absolute top-50 start-50 translate-middle d-flex justify-content-center align-items-center fs-1 text-white bg-success w-100 h-100 opacity-75 rounded-3">
+                                        <a href="" class="text-decoration-none text-white" data-bs-target="#modal-5"
+                                            data-bs-toggle="modal"> + </a>
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="modal fade" id="modal-5" tabindex="-1" role="document"
+                                aria-labelledby="modalTitleId" aria-hidden="true" data-bs-backdrop="static">
+                                <div class="modal-dialog modal-lg modal-dialog-center modal-fullscreen-lg-down"
+                                    role="document">
+                                    <div class="modal-content">
+                                        <div class="modal-header border-0">
+                                            <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                                aria-label="Close"></button>
+                                        </div>
+                                        <div class="modal-body">
+                                            <div
+                                                class="modal-title d-flex flex-column justify-content-center align-items-center">
+                                                <h2 class="text-uppercase text-center">Controller</h2>
+                                                <div class="wrapper d-flex align-items-center">
+                                                    <div
+                                                        class="line-l border border-4 border-top-0 border-dark border-start-0 border-end-0 text-light mb-3">
+                                                        ---------------</div>
+                                                    <div class="star fs-4 text-dark mx-4"> <i
+                                                            class="fa-solid fa-star"></i> </div>
+                                                    <div
+                                                        class="line-r border border-4 border-top-0 border-dark border-start-0 border-end-0 text-light mb-3">
+                                                        ---------------</div>
+                                                </div>
+                                            </div>
+                                            <div class="modal-img d-flex justify-content-center align-items-center">
+                                                <img src="assets/img/portfolio/cabin.png"
+                                                    class="img-fluid rounded-3 mt-3 w-75 h-75" alt="">
+                                            </div>
+                                            <div
+                                                class="modal-title d-flex justify-content-center align-items-center text-center mt-3">
+                                                <p class="w-75 h-75">Lorem ipsum dolor, sit amet consectetur adipisicing
+                                                    elit. Odit iusto
+                                                    quisquam aliquid accusamus officia praesentium quas! Quidem in at
+                                                    unde
+                                                    facilis veritatis facere impedit doloremque placeat iste ea, et
+                                                    maxime
+                                                    quibusdam.</p>
+                                            </div>
+                                        </div>
+                                        <div
+                                            class="modal-footer border-0 d-flex justify-content-center align-items-center">
+                                            <button type="button" class="btn btn-info mb-4" data-bs-dismiss="modal">
+                                                X Close Window
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-4 col-lg-6 col-md-6 col-sm-12">
+                            <div class="card border-0 position-relative">
+                                <img src="assets/img/portfolio/submarine.png" class="rounded-3" alt="">
+                                <div class="card-hover">
+                                    <span
+                                        class="modify position-absolute top-50 start-50 translate-middle d-flex justify-content-center align-items-center fs-1 text-white bg-success w-100 h-100 opacity-75 rounded-3">
+                                        <a href="" class="text-decoration-none text-white" data-bs-target="#modal-6"
+                                            data-bs-toggle="modal"> + </a>
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="modal fade" id="modal-6" tabindex="-1" role="document"
+                                aria-labelledby="modalTitleId" aria-hidden="true" data-bs-backdrop="static">
+                                <div class="modal-dialog modal-lg modal-dialog-center modal-fullscreen-lg-down"
+                                    role="document">
+                                    <div class="modal-content">
+                                        <div class="modal-header border-0">
+                                            <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                                aria-label="Close"></button>
+                                        </div>
+                                        <div class="modal-body">
+                                            <div
+                                                class="modal-title d-flex flex-column justify-content-center align-items-center">
+                                                <h2 class="text-uppercase text-center">Controller</h2>
+                                                <div class="wrapper d-flex align-items-center">
+                                                    <div
+                                                        class="line-l border border-4 border-top-0 border-dark border-start-0 border-end-0 text-light mb-3">
+                                                        ---------------</div>
+                                                    <div class="star fs-4 text-dark mx-4"> <i
+                                                            class="fa-solid fa-star"></i> </div>
+                                                    <div
+                                                        class="line-r border border-4 border-top-0 border-dark border-start-0 border-end-0 text-light mb-3">
+                                                        ---------------</div>
+                                                </div>
+                                            </div>
+                                            <div class="modal-img d-flex justify-content-center align-items-center">
+                                                <img src="assets/img/portfolio/cabin.png"
+                                                    class="img-fluid rounded-3 mt-3 w-75 h-75" alt="">
+                                            </div>
+                                            <div
+                                                class="modal-title d-flex justify-content-center align-items-center text-center mt-3">
+                                                <p class="w-75 h-75">Lorem ipsum dolor, sit amet consectetur adipisicing
+                                                    elit. Odit iusto
+                                                    quisquam aliquid accusamus officia praesentium quas! Quidem in at
+                                                    unde
+                                                    facilis veritatis facere impedit doloremque placeat iste ea, et
+                                                    maxime
+                                                    quibusdam.</p>
+                                            </div>
+                                        </div>
+                                        <div
+                                            class="modal-footer border-0 d-flex justify-content-center align-items-center">
+                                            <button type="button" class="btn btn-info mb-4" data-bs-dismiss="modal">
+                                                X Close Window
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="about" id="about">
+            <div class="container-fluid py-5 h-60vh bg-info">
+                <div class="title-bar d-flex flex-column justify-content-center align-items-center">
+                    <h2 class="text-uppercase text-center text-white">About</h2>
+                    <div class="wrapper d-flex align-items-center">
+                        <div
+                            class="line-l border border-4 border-top-0 border-white border-start-0 border-end-0 text-info mb-3">
+                            ---------------</div>
+                        <div class="star fs-2 text-white mx-4"> <i class="fa-solid fa-star"></i> </div>
+                        <div
+                            class="line-r border border-4 border-top-0 border-white border-start-0 border-end-0 text-info mb-3">
+                            ---------------</div>
+                    </div>
+                </div>
+                <div class="container d-flex justify-content-center align-items-center">
+                    <div class="title w-75 h-50 d-flex ms-5 mt-3">
+                        <div class="text-l text-left text-white">
+                            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Assumenda eum qui vitae inventore
+                            iusto iure architecto aut deserunt ullam neque. Lorem ipsum dolor sit ametsdfsd consectetur
+                            adipisicing elit. Sed, minima.
+                        </div>
+                        <div class="text-r text-left ms-5 text-white">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum maxime tempore eligendi
+                            consequuntur iusto laborum inventore dolore maiores modi omnis. Lorem ipsum dolor sit amet
+                            consectetur adipisicing elit. Repudiandae, ducimus!
+                        </div>
+                    </div>
+                </div>
+                <div class="btn d-flex justify-content-center mt-5">
+                    <button type="button" class="btn btn-outline-primary">
+                        <i class="fa-solid fa-download"></i> Free Download
+                    </button>
+                </div>
+            </div>
+        </section>
+        <section class="contact" id="contact">
+           <div class="container-fluid h-60vh py-5">
+            <div class="title-bar d-flex flex-column justify-content-center align-items-center">
+                <h2 class="text-uppercase text-center text-dark">Contact</h2>
+                <div class="wrapper d-flex align-items-center">
+                    <div
+                        class="line-l border border-4 border-top-0 border-dark border-start-0 border-end-0 text-white mb-3">
+                        ---------------</div>
+                    <div class="star fs-2 text-dark mx-4"> <i class="fa-solid fa-star"></i> </div>
+                    <div
+                        class="line-r border border-4 border-top-0 border-dark border-start-0 border-end-0 text-white mb-3">
+                        ---------------</div>
+                </div>
+            </div>
+           </div>
+        </section>
+        <section class="h-40vh bg-dark">
+            <div class="container">
+                <div class="row d-flex justify-content-center align-items-center">
+                    <div class="col-4 d-flex justify-content-center">
+                        <div class="card bg-dark text-white">
+                            <div class="card-body text-center lh-lg mt-5">
+                                <h3 class="card-title text-uppercase">Location</h3>
+                                <p class="card-text">2215 join daniel drives</p>
+                                <p class="card-text">clark.mo 2023</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-4">
+                        <div class="card bg-dark text-white">
+                            <div class="card-body text-center lh-lg mt-4">
+                                <h3 class="card-title text-uppercase">Around the Web</h3>
+                                <div class="wrapper mt-3">
+                                    <i class="fa-brands fa-twitter p-2 border rounded-circle m-2"></i>
+                                    <i class="fa-brands fa-linkedin-in p-2 border rounded-circle m-2"></i>
+                                    <i class="fa-brands fa-x-twitter p-2 border rounded-circle m-2"></i>
+                                    <i class="fa-solid fa-globe p-2 border rounded-circle m-2"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-4">
+                        <div class="card bg-dark text-white">
+                            <div class="card-body text-center lh-lg mt-5">
+                                <h3 class="card-title text-uppercase">About Freelancer</h3>
+                                <p class="card-text">2215 join daniel drives</p>
+                                <p class="card-text">clark.mo 2023</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <footer>
+            <p>copyright your website 2024</p>
+        </footer>
+    </main>
+    <script src="js/bootstrap.bundle.js"></script>
+</body>
+
+</html>
